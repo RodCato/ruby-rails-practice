@@ -5,5 +5,7 @@ Rails.application.routes.draw do
 
   root to: 'blog#index'
 
+  get '/blogs/new' => 'blog#new'
+
   get '/blogs/:id' => 'blog#show'
 end

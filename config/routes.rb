@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get '/index' => 'blog#index'
 
   root to: 'blog#index'
+
+  get '/blogs/:id' => 'blog#show'
 end

@@ -1,6 +1,6 @@
 <h1> This is the landing page </h1>
-<% @blogs.each do |title| %> 
-    <li><%= title.post_titles %></li>
+<% @blogs.each do |blog| %> 
+      <li><%= link_to blog.post_titles, blog_path(blog) %></li>
 <%end%>
 <br>
 <br>

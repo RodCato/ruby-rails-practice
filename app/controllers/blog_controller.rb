@@ -10,6 +10,9 @@ class BlogController < ApplicationController
     def new
         @blog = Blog.new
     end
+    def to_param
+        "#{id}-#{post_titles.parameterize}"
+      end
 
     def create
         @blog = Blog.create(blog_params)

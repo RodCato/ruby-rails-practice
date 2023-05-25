@@ -1,4 +1,6 @@
 <h2><%= @blog.post_titles %></h2>
 <h3><%= @blog.content %></h3>
-
+<br/>
+<%= button_to 'Delete Post', destroy_blog_path(@blog), method: :delete %>
+<br />
 <%= link_to 'Home', '/' %>

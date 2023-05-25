@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   post '/blogs' => 'blog#create'
 
   get '/blogs/:id' => 'blog#show'
+  
+  delete '/blogs/:id' => 'blog#destroy', as: 'destroy_blog'
 end
